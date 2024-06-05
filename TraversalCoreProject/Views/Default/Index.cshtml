@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+<!--View Componente ulaşmak için kısayol. Kısa yol kullanmak için mutlaka bu view comp. Shared kalsörü altındaki default klasöründe olmalı.-->
+@await Component.InvokeAsync("_SliderPartial")
+<!-- //banner-slider-->
+<!--/grids-->
+@await Component.InvokeAsync("_PopularDestinationsPartial")
+<!--//grids-->
+<!-- stats -->
+@await Component.InvokeAsync("_Statistics")
+<!-- //stats -->
+<!--/-->
+@await Component.InvokeAsync("_Feature")
+<!-- //stats -->
+<!--/w3l-bottom-->
+@await Component.InvokeAsync("_SubAbout")
+<!--//w3l-bottom-->
+<!-- testimonials -->
+@await Component.InvokeAsync("_Testimonial")
+<!-- //testimonials -->
