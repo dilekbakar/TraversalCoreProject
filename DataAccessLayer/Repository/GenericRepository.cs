@@ -11,6 +11,7 @@ namespace DataAccessLayer.Repository
         {
             using var c = new Context();
             c.Remove(entity);
+            c.SaveChanges();
         }
 
         public T GetById(int id)
