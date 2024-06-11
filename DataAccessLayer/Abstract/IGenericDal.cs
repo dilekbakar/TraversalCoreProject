@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace DataAccessLayer.Abstract
 {
@@ -9,5 +11,6 @@ namespace DataAccessLayer.Abstract
         void Update(T entity);
         List<T> GetList();
         T GetById(int id);
+        List<T> GetListByFilter(Expression<Func<T,bool>> filter);
     }
 }

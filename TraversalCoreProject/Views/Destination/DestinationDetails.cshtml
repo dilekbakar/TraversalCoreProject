@@ -204,7 +204,7 @@
                         </div>
                     </div>
                     <!--//author-card-->
-                    @await Component.InvokeAsync("_CommentList")
+                    @await Component.InvokeAsync("_CommentList",new {id=ViewBag.Id})
 
                     @await Component.InvokeAsync("_AddComment")
                 </div>
